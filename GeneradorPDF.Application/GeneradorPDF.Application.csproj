@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeneradorPDF.Domain\GeneradorPDF.Domain.csproj" />
+    <ProjectReference Include="..\GeneradorPDF.Infrastructure\GeneradorPDF.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

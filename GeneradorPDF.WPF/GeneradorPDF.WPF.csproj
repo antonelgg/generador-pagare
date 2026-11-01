@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Pagare</AssemblyName>
+    <RootNamespace>GeneradorPDF.WPF</RootNamespace>
+    <ApplicationIcon>Resources\Pagare.ico</ApplicationIcon>
+
+    <!-- Self-contained + archivo único: corre en cualquier Windows sin instalar nada -->
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <DebugType>None</DebugType>
+
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeneradorPDF.Domain\GeneradorPDF.Domain.csproj" />
+    <ProjectReference Include="..\GeneradorPDF.Infrastructure\GeneradorPDF.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
